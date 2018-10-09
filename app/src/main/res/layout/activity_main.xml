@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="温度列表"
+        />
+    <View
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000"
+        />
+
+
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+        <View
+            android:background="#000"
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.kunlan.zidingyi.myapplication.NoScrollListview
+                android:id="@+id/page_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:visibility="visible">
+
+            </com.kunlan.zidingyi.myapplication.NoScrollListview>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:background="#000"
+                />
+            <com.kunlan.zidingyi.myapplication.NoScrollListview
+                android:id="@+id/page_list2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:visibility="visible">
+
+            </com.kunlan.zidingyi.myapplication.NoScrollListview>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:background="#000"
+                />
+            <com.kunlan.zidingyi.myapplication.NoScrollListview
+                android:id="@+id/page_list3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="visible">
+
+            </com.kunlan.zidingyi.myapplication.NoScrollListview>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:background="#000"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000"
+        />
+
+    <LinearLayout
+        android:layout_weight="1.5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/pre_page"
+                android:text="首页"
+                />
+            <Button
+                android:id="@+id/pre_item"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="上一页"
+                tools:ignore="NestedWeights" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/pagenum"
+                android:gravity="center"
+                />
+            <Button
+                android:id="@+id/next_item"
+                android:layout_weight="1"
+                android:text="下一页"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/next_page"
+                android:text="末页"
+                />
+        </LinearLayout>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="horizontal"
+          >
+          <Button
+              android:layout_weight="1"
+              android:id="@+id/start_btn"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="开始记录"
+              />
+          <TextView
+              android:gravity="center"
+              android:layout_weight="1.35"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="--------"
+              />
+          <Button
+              android:layout_weight="1"
+              android:id="@+id/stop_btn"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="停止记录"
+              />
+      </LinearLayout>
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical"-->
+        <!--&gt;-->
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/num"-->
+            <!--/>-->
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/temp"-->
+            <!--/>-->
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/time222"-->
+            <!--/>-->
+    <!--</LinearLayout>-->
+
+</LinearLayout>
